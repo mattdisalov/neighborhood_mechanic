@@ -1,0 +1,343 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    }
+
+/* Map */
+#map {
+    height: 70%;
+    width: 70%;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.info_link {
+  text-decoration: none;
+  color: #0000EE;
+}
+.info_link:hover {
+  color: #551A8B;
+}
+
+/* Navbar */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: #24252a;
+      }
+      
+      .logo {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #edf0f1;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .logo:hover {
+        color: #0088a9;
+        transition: color 0.5s ease 0s;
+      }
+      
+      .nav__links a,
+      .cta,
+      .overlay__content a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #edf0f1;
+        text-decoration: none;
+      }
+      
+      .nav__links {
+        list-style: none;
+        display: flex;
+      }
+      
+      .nav__links li {
+        padding: 0px 20px;
+      }
+      
+      .nav__links li a {
+        transition: color 0.3s ease 0s;
+      }
+      
+      .nav__links li a:hover {
+        color: #0088a9;
+      }
+      
+      .cta {
+        padding: 9px 25px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease 0s;
+      }
+      
+      .cta:hover {
+        background-color: rgba(0, 136, 169, 0.8);
+      }
+      
+      /* Mobile Nav */
+      .menu {
+        display: none;
+      }
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: #24252a;
+        overflow-x: hidden;
+        transition: width 0.5s ease 0s;
+      }
+      
+      .overlay--active {
+        width: 100%;
+      }
+      
+      .overlay__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .overlay a {
+        padding: 15px;
+        font-size: 30px;
+        display: block;
+        transition: color 0.3s ease 0s;
+      }
+      
+      .overlay a:hover,
+      .overlay a:focus {
+        color: #0088a9;
+      }
+      .overlay .close {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 50px;
+        color: #edf0f1;
+      }
+      
+      @media screen and (max-height: 320px) {
+        .overlay a {
+          font-size: 20px;
+        }
+        .overlay .close {
+          font-size: 30px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+      
+      @media only screen and (max-width: 800px) {
+        .nav__links,
+        .cta {
+          display: none;
+        }
+        .menu {
+          display: initial;
+        }
+      }
+
+/* Footer */
+#footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #24252a;
+  width: 100%;
+}
+
+#footer_content {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #edf0f1;
+  font-size: 10px;
+  cursor: default;
+}
+
+/* Icons Page */
+#icons {
+  margin: auto;
+  width: 70%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.img-par {
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/* Icon Page Mobile */
+@media only screen and (max-width: 800px) {
+  .img-par {
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+
+/* About Page */
+#about {
+  width: 100%;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  cursor: default;
+}
+
+#about-h {
+text-align: center;
+padding: 20px;
+}
+
+#about-p {
+text-align: center;
+padding: 25px 50px 50px 50px;
+}
+
+#about a {
+  text-decoration: none;
+  color: #0000EE;
+}
+
+#about a:hover {
+  color: #551A8B;
+}
+
+/* Contact Page */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.form{
+  width: 75%;
+  height: fit-content;
+  max-width: 600px;
+  background: #edf0f1;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: "Montserrat",sans-serif;
+}
+
+.form h1{
+  margin-top: 0;
+  font-weight: 200;
+  cursor: default;
+}
+
+.txtb{
+  border:1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.txtb label{
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.submit{
+  display: inline-block;
+  background: #0088a9;
+  padding: 14px 0;
+  border-radius: 8px;
+  border: 1px solid gray;
+  color: #edf0f1;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.submit:hover {
+  background: rgba(0, 136, 169, 0.8);
+}
+
+.status {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat",sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Contact Page Mobile */
+@media only screen and (max-width: 800px) {
+  .form {
+    top: 57%;
+    width: 90%;
+    position: fixed;
+  }
+  .txtb input,.txtb textarea{
+    font-size: 12px;
+  }
+  .txtb label {
+    font-size: 14px;
+  }
+  .status {
+    font-size: 10px;
+  }
+
+@media only screen and (max-width: 400px) {
+    .form {
+      top:57%;
+      left: 48%;
+      width: 90%;
+      font-size: 12px;
+      padding: 10px;
+      position: fixed;
+    }
+    .txtb input,.txtb textarea{
+      font-size: 10px;
+    }
+    .txtb label {
+      font-size: 10px;
+    }
+    .status {
+      font-size: 8px;
+    }
